@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Survey{% endblock %}
+
+{% block content %}
+<h1>{{question}}</h1>
+<form action="http://127.0.0.1:5000/submit" method="post" name="form_data">
+    <input type="radio" name="btn" value="YES" for="form_data">
+    <label>YES</label>
+    <input type="radio" name="btn" value="NO" for="form_data">
+    <label>NO</label>
+    <input type="submit" value="Next">
+</form>
+
+{% endblock %}

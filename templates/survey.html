@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Survey{% endblock %}
+
+{% block content %}
+<h1>{{survey_title}}</h1>
+<p>{{survey_instructions}}</p>
+<form action="http://127.0.0.1:5000/submit" method="post">
+    <input type="submit" value="Start Survey">
+</form>
+
+{% endblock %}
